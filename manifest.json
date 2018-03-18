@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Bitbucket Review Extension",
+    "description": "This extension will add a 'Start Review' button to the Bitbucket pull request page, which will start a timer. On finishing the review, the details will be saved",
+    "version": "1.0",
+  
+
+
+    "content_scripts": [
+        {
+            "matches": ["https://bitbucket.org/ranemills/*"],
+            "js": ["inject.js"]
+        }
+    ],
+
+    "permissions": [
+        "tabs"
+    ]
+  }
